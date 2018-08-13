@@ -6,194 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <style>
-        * { 
-            border: 1px solid #dedede; 
-            padding: 15px;
-            margin: 0; 
-        }
-        html { 
-            margin: 0;
-            padding: 0;
-        }
-        body { 
-            max-width: 100%;
-            padding: 0;
-        }
-        /* header */
-       
-
-        .sidenav {
-            padding: 0;
-            height: 100%;
-            width: 200px;
-            position: fixed;
-            z-index: 1;
-            top: 0;
-            left: 0;
-            background-color: #111;
-            overflow-x: hidden;
-            padding-top: 20px;
-        }
-
-        .sidenav {
-            right: 0;
-        }
-
-        .sidenav {
-            height: 100%; /* 100% Full-height */
-            width: 0; /* 0 width - change this with JavaScript */
-            position: fixed; /* Stay in place */
-            z-index: 1; /* Stay on top */
-            top: 0; /* Stay at the top */
-            left: 0;
-            background-color: #111; /* Black*/
-            overflow-x: hidden; /* Disable horizontal scroll */
-            padding-top: 60px; /* Place content 60px from the top */
-            transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-        }
-
-        /* The navigation menu links */
-        .sidenav a {
-            padding: 8px 8px 8px 32px;
-            text-decoration: none;
-            font-size: 25px;
-            color: #818181;
-            display: block;
-            transition: 0.3s;
-        }
-
-        /* When you mouse over the navigation links, change their color */
-        .sidenav a:hover {
-            color: #f1f1f1;
-        }
-
-        /* Position and style the close button (top right corner) */
-        .sidenav .closebtn {
-            position: absolute;
-            top: 0;
-            right: 25px;
-            font-size: 36px;
-            margin-left: 50px;
-        }
-
-        /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-        #main {
-            transition: margin-left .5s;
-            padding: 20px;
-        }
-
-        /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-        @media screen and (max-height: 450px) {
-            .sidenav {padding-top: 15px;}
-            .sidenav a {font-size: 18px;}
-        }
-
-         header {
-            margin : 0;
-            padding: 80px; /* some padding */
-            text-align: center; /* center the text */
-            background: #1abc9c; /* green background */
-            color: white; /* white text color */
-        }
-        
-        header h1 {
-            font-size: 40px;
-        }
-        #main {
-            padding: 0;
-        }
-        #overlay {
-            position: fixed; /* Sit on top of the page content */
-            display: none; /* Hidden by default */
-            width: 100%; /* Full width (cover the whole page) */
-            height: 100%; /* Full height (cover the whole page) */
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(0,0,0,0.5); /* Black background with opacity */
-            z-index: 0; /* Specify a stack order in case you're using a different order for other elements */
-            cursor: pointer; /* Add a pointer on hover */
-        }
-        #overlay{
-            transition: .5s;
-            padding: 20px;
-        }
-        .w3-container:after,.w3-container:before,{
-            content:"";display:table;clear:both
-        }
-        .w3-container{
-            padding:0.01em 16px
-        }
-        
-        html {
-        box-sizing: border-box;
-        }
-
-        *, *:before, *:after {
-        box-sizing: inherit;
-        }
-
-        .column {
-        float: left;
-        width: 33.3%;
-        margin-bottom: 16px;
-        padding: 0;
-        }
-
-        @media screen and (max-width: 650px) {
-        .column {
-            width: 100%;
-            display: block;
-        }
-        }
-
-        .card {
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-        padding: 0
-        }
-
-        .container {
-        padding: 0 16px;
-        }
-
-        .container::after, .row::after {
-        content: "";
-        clear: both;
-        display: table;
-        }
-
-        .title {
-        color: grey;
-        }
-
-        .button {
-        border: none;
-        outline: 0;
-        display: inline-block;
-        padding: 8px;
-        color: white;
-        background-color: #000;
-        text-align: center;
-        cursor: pointer;
-        width: 100%;
-        }
-
-        .button:hover {
-        background-color: #555;
-        }
-
-
-
-    </style>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="footer.css">
 </head>
 <body>
     <div id="overlay"> </div> 
     <div id="main">
                 <header>
-                    <h1>The Shop</h1>
-                    <h3>welcome</h3>
+                    <h1>The Team</h1>
+                    <h3>welcome our project</h3>
                     <span onclick="openNav()">open</span>
                 </header>
                 <aside>
@@ -209,7 +30,7 @@
                         </ul>
                     </nav>
                 </aside>
-                
+    
                    <!-- Team Section -->
                 <div class="w3-container" style="padding:128px 16px" id="team">
                 <h3 class="w3-center">THE TEAM</h3>
@@ -222,18 +43,48 @@
                               <h2>Jane Doe</h2>
                               <p class="title">CEO & Founder</p>
                               <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                             
                               <p><button class="button">Contact</button></p>
                             </div>
                           </div>
                         </div>
+
+                        <div class="column">
+                            <div class="card">
+                              <img src="./team2.jpg" alt="Jane" style="padding:0;width:100%">
+                              <div class="container">
+                                <h2>Jane Doe</h2>
+                                <p class="title">CEO & Founder</p>
+                                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                                <p><button class="button">Contact</button></p>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="column">
+                            <div class="card">
+                              <img src="./team2.jpg" alt="Jane" style="padding:0;width:100%">
+                              <div class="container">
+                                <h2>Jane Doe</h2>
+                                <p class="title">CEO & Founder</p>
+                                <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+                                <p><button class="button">Contact</button></p>
+                              </div>
+                            </div>
+                          </div>
                 </div>
-                
-                
-                    <footer>
-                
-                    </footer>    
-               
+  
+                <footer>
+                    <div class="copyright">
+                    <p>&copy 2013 - Organisation</p>
+                    </div>
+                    <div class="social">
+                    <a href="#" class="support">Contact Us</a>
+                    <a href="#" class="face">f</a>
+                    <a href="#" class="tweet">t</a>
+                    <a href="#" class="linked">in</a>
+                    </div>
+                </footer>
+             
     </div>
     <script>
         /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
